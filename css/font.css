@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'itcast';
+    src: url('../fonts/MiFie-Web-Font.eot') format('embedded-opentype'), url('../fonts/MiFie-Web-Font.svg') format('svg'), url('../fonts/MiFie-Web-Font.ttf') format('truetype'), url('../fonts/MiFie-Web-Font.woff') format('woff');
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    font-style: normal;
+    /*注意上面选择器中间的空格
+我们使用的名为itcast的字体就是最上面的@font-face的方式声明*/
+    /*当字体名字之间有空格的都要用引号引起来 ,如果没有空格的话可以不用引号*/
+    font-family: itcast;
+}
+
+.icon-mobilephone::before {
+    content: "\e908";
+}
+
+.icon-mobilephone::before {
+    content: "\e908";
+}
+
+.icon-mobilephone::before {
+    content: "\e908";
+}
+
+.icon-icon::before {
+    content: "\e920";
+}
+
+.icon-logo::before {
+    content: "\e93e";
+}
+
+.icon-meiyuan::before {
+    content: "\e907";
+    font-size: 30px;
+}
+
+.icon-naozhong::before {
+    content: "\e906";
+}
+
+.icon-video::before {
+    content: "\e905";
+}
+
+.icon-news01::before {
+    content: "\e90e";
+}
+
+.icon-news02::before {
+    content: "\e90f";
+}
+
+.icon-news03::before {
+    content: "\e910";
+}
+
+.icon-news04::before {
+    content: "\e911";
+}
+
+.icon-partner1::before {
+    content: "\e92f";
+}
+
+.icon-partner2::before {
+    content: "\e92e";
+}
+
+.icon-partner3::before {
+    content: "\e92d";
+}
+
+.icon-partner4::before {
+    content: "\e92a";
+}
+
+.icon-partner5::before {
+    content: "\e92b";
+}
+
+.icon-partner6::before {
+    content: "\e929";
+}
+
+.icon-partner7::before {
+    content: "\e931";
+}
+
+.icon-partner8::before {
+    content: "\e932";
+}
+
+.icon-partner9::before {
+    content: "\e933";
+}

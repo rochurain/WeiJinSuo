@@ -1,0 +1,412 @@
+// 顶部通栏部分
+@import "../css/comm.css";
+@linkColor:#666;
+@iconColor:#e92322;
+
+.pr {
+    padding-right: 0px;
+}
+
+    #header {
+        .topbar {
+            border-bottom: 1px solid #ccc;
+            .row {
+                >div {
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    border-left: 1px solid #ccc;
+                    &.tag {
+                        border-left: none;
+                        .mobile {
+                            position: relative;
+                            display: block;
+                            &:hover {
+                                .Qr-code {
+                                    display: block;
+                                }
+                            }
+                            .Qr-code {
+                                position: absolute;
+                                top: 40px;
+                                left: 50%;
+                                display: none;
+                                transform: translate(-50%);
+                                z-index: 999;
+                            }
+                        }
+                    }
+                    >a {
+                        color: @linkColor;
+                    }
+                   .btn-danger {
+                       background-color: #e92322;
+                       color:#fff;
+                       outline: none;
+                   }
+                   .btn-link {
+                       color: @linkColor;
+                       outline: none;
+                       text-decoration: none;
+                   }
+                }
+            }
+        }
+    }
+    
+    #nav {
+        margin-bottom: 0px;
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+        z-index: 100;
+        top: 0;
+        .navbar-header {
+            .navbar-toggle {
+                margin-top: 23px;
+            }
+            .navbar-brand {
+                display: block;
+                height: 80px;;
+                line-height: 50px;
+                text-align: center;
+                >i {
+                    font-size: 30px;
+                    color:  #e92322;
+                    &:last-child {
+                        color: #000;
+                    }
+                }
+            }
+        }
+        .navbar-collapse {
+            background-color: #fff;
+            .navbar-nav {
+                >li {
+                  
+                    >a {
+                       
+                        font-size: 14px;
+                        display: block;
+                        height: 80px;;
+                        line-height: 50px;
+                        // text-align: center;
+                        &:hover {
+                           border-bottom: 2px solid  #e92322;; 
+                        }
+                        &:first-child {
+                            background-color: #fff;                        
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    #slides {
+        .carousel-inner {
+            >.item {
+                .pcImg {
+                    height: 410px;
+                    background-position: center;
+                    
+                }
+            }
+        }
+    }
+    
+    
+    
+    #gurantee {
+        padding: 40px 0;
+        .media {
+            margin-bottom: 20px;
+            >a {
+                text-decoration: none;
+                color: @linkColor;
+                &:hover {
+                    color: @iconColor;
+                }
+            }
+        }
+    }
+    
+    
+    #booking {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 20px 0;
+        font-size: 14px;
+        .pull-right {
+            i {
+                padding-right: 5px;
+            }
+            a {
+                color:@linkColor;
+            }
+        }
+        a {
+            text-decoration: none;
+            &:hover {
+                color: @iconColor;
+            }
+        }
+    }
+    
+    #recommend {
+        background-color: #f0f0f0;
+        .ul-wapper {
+             width: 100%;
+            padding-top: 40px;
+            border-bottom: 1px solid #ddd;
+            overflow-x: auto;
+    
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            .nav-tabs {
+                width: 750px;
+                li {
+                    a {
+                        border: none;
+                        // background-color: #f0f0f0;
+                        background-color: transparent;;
+                        font-size: 16px;
+                        border-bottom: 2px solid transparent;
+                        color: @linkColor;
+                    }
+                       
+                    &.active{
+                        a {
+                            border-bottom: 2px solid @iconColor;
+                        }     
+                        }
+                }
+            }
+        }
+        
+        .tab-content {
+            padding:20px 0;
+            .tab-pane {
+               > .row {
+                    > div {
+                        // 底部挤开20px距离内部浮动是
+                        margin-bottom: 20px;
+                      .productBox {
+    
+                          background-color: #fff;
+                          margin: 0px;
+                        .product-left {
+                            overflow: hidden;
+                            height: 160px;
+                            padding: 0 10px;
+                            margin-right: 120px;
+                            font-size: 14px;
+                        
+                            h4 {
+                                margin: 10px 0px;
+                                text-align: center;
+                            }
+                            @media (max-width:320px) {
+                                h4 {
+                                    margin: 5px 0px;
+                                    text-align: center;
+                                }
+                            }
+                            .row {
+                                >div {
+                                    margin-bottom: 10px;
+                                   > p {
+                                        margin-bottom: 0px;
+                                    }
+                                }
+                                > div:nth-child(2n) {
+                                    text-align: right
+                                }
+                                
+                            }
+                        }
+                        .product-right {
+                            height: 160px;
+                            width: 120px;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            padding-top: 40px;
+                            border-left: 1px dashed #ccc;
+                             >p {
+                                 text-align: center;  
+                             strong {
+                                 font-size: 30px;
+                                
+                                 
+                             }
+                         }
+    
+                         >.tooltips {
+                            //  使用绝对定位脱标不占位置,这样就不会影响其他元素的布局
+                            width: 100%;
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            top: 20px;
+                            text-align: center;
+                            >a {
+                                display: inline-block;
+                                width: 20px;
+                                height: 20px;
+                                text-decoration: none;
+                            }
+                            >a:first-of-type {
+                                color: #e92322;
+                                border: 1px solid #e92322;
+                            }
+                            >a:last-of-type {
+                                color: #0f0;
+                                border: 1px solid #0f0;
+                                margin-left: 5px;
+                            }
+                        }
+                        
+                         &::before {
+                            content: "";
+                            height: 16px;
+                            width: 16px;
+                            border-radius: 50%;
+                            background-color: #f0f0f0;
+                            position: absolute;
+                            left: -8px;
+                            top:-8px;
+                        }
+                        &::after {
+                            content: "";
+                            height: 16px;
+                            width: 16px;
+                            border-radius: 50%;
+                            background-color: #f0f0f0;
+                            position: absolute;
+                            left: -8px;
+                            bottom:-8px;
+                        }
+    
+                        }
+                      }
+                    //   当前为active的类有独自的css样式
+                      .active {
+                        background-color: @iconColor;
+                         color: #fff;
+                         .product-right {
+                             p {
+                                 color: #fff;
+                             }
+                         }
+    
+                }
+                     
+                    }
+                }
+            }
+        }
+    }
+    
+    #news {
+        padding: 40px 0;
+        .row {
+            > div {
+                &:first-child {
+                    h4 {
+                        text-align: center;
+                        line-height: 40px;
+                        border-bottom: 1px dashed #ccc;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            border: 1px solid #ccc;
+                            bottom: -5px;
+                            right: 4px;
+                        }
+                    }
+                }
+            }
+            .col-md-1  {
+                .nav-tabs {
+                    border-bottom: none;
+                  >  li {
+                      margin-bottom: 10px;
+                        a {
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            border: none;
+                            text-align: center;
+                            line-height: 40px;
+                            border-bottom: none;
+                            i {
+                                font-size: 30px;
+                                color: #ccc;
+                            }
+                            &:hover {
+                                background-color: @iconColor;
+                            }
+                        }
+                        //有active类的元素的css样式
+                      &.active {
+                          a {
+                            background-color: @iconColor;
+                          
+                          }
+                      }
+                    }
+                }
+            }
+    
+            .col-md-7 {
+                padding-left: 50px;
+                li {
+                    line-height:35px;
+                }
+            }
+    
+        }
+    }
+    
+    
+    
+    
+    #partner {
+    
+        padding: 40px 0;
+        .container {
+            .tit {
+                h3 {
+                    text-align: center;
+                    margin-bottom:10px
+                }
+            }
+            .partner-list {
+                li {
+                    width: 11.11%;
+                    float: left;
+                    a {
+                        display: block;
+                        text-align: center;
+                            i {
+                                font-size: 50px;
+                                color: #333;
+                            }
+    
+                            &:hover {
+                                text-decoration: none;
+                            }
+                    }
+                }
+            }
+        }
+     
+    
+    }
+    
+
